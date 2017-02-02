@@ -1,0 +1,18 @@
+.projects {
+	width: 100%;
+	min-height: 800px;
+
+	.carousel {
+		padding-top: 20px;
+	}
+
+	h3 {
+		padding-top: 100px;
+		color: #333333;
+		font: 700 20px/28px $secondary_font;
+		text-transform: uppercase;
+	}
+	p {
+		padding: 35px 0;
+	}
+}

@@ -1,0 +1,35 @@
+.hero {
+	background: #ececec;
+	.hero-box {
+		background: url('../../img/rectangle-1.png') no-repeat center center, url('../../img/bg.png') no-repeat center center;
+		background-size: cover;
+		min-height: 890px;
+
+		.logo {
+			margin-top: 160px;
+			text-align: center;
+		}
+		h2 {
+			margin-top: 10px;
+			color: $secondary_font_color;
+			font: italic 44px/60px $primary_font;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+}
+.nav li a,
+#touch-menu {
+	display: block;
+	padding: 10px 20px;
+	color: $primary_font_color;
+	font: 700 14px/24px $primary_font;
+}
+.nav li a:hover {color: $secondary_font_color;}
+#touch-menu:hover {color: $secondary_font_color;}
+#touch-menu {display: none;}

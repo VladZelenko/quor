@@ -1,0 +1,36 @@
+@import "variables";
+
+*, *:after, *:before {box-sizing: border-box;}
+li {list-style: none;}
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	color: $primary_font_color;
+	font: 400 14px/28px $primary_font;
+}
+
+.title {
+	color: $head_primary_color;
+	font: 600 30px/72px $primary_font;
+	text-align: center;
+	text-transform: uppercase;
+	&:after {
+		content: '';
+		display: block;
+		margin: 0 auto;
+		width: 100px;
+		height: 2px;
+		background: #d1d1d1;
+	}
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
