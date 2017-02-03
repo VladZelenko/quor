@@ -6270,7 +6270,7 @@ body {
   padding: 80px 0;
   background: #ececec;
   width: 100%;
-  min-height: 890px; }
+  min-height: 700px; }
 
 .about .main-flexbox {
   padding-top: 120px;
@@ -6379,12 +6379,34 @@ body {
   min-height: 800px; }
   .projects .carousel {
     padding-top: 20px; }
+  .projects .flexbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .projects .flexbox .col-1 {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+      max-width: 600px; }
+    .projects .flexbox .col-2 {
+      max-width: 470px; }
   .projects h3 {
-    padding-top: 100px;
+    padding: 100px 0 35px 0;
     color: #333333;
     font: 700 20px/28px "Raleway", sans-serif;
     text-transform: uppercase; }
-  .projects p {
+  .projects .item-2 {
     padding: 35px 0; }
 
 .services {
@@ -6453,6 +6475,14 @@ body {
 .blog h2.title {
   padding-top: 200px; }
 
+.primary-btn {
+  display: block;
+  width: 95px;
+  height: 25px;
+  border: 1px solid #009aff;
+  font: 400 12px/25px "Lato", sans-serif;
+  text-align: center; }
+
 @media (min-width: 1570px) and (max-width: 2880px) {
   .container {
     width: 70%;
@@ -6495,6 +6525,14 @@ body {
     margin: 0 100px; }
   .about .main-flexbox .col-1 .box-1, .about .main-flexbox .col-3 .box-1 {
     margin-bottom: 45px;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0; } }
+
+@media (min-width: 400px) and (max-width: 1920px) {
+  .projects .flexbox .col-1 {
+    margin-right: 105px;
     -webkit-box-ordinal-group: 1;
     -webkit-order: 0;
         -ms-flex-order: 0;

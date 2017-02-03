@@ -12,7 +12,7 @@
 		padding: 80px 0;
 		background: #ececec;
 		width: 100%;
-		min-height: 890px;
+		min-height: 700px;
 	}
 	.main-flexbox {
 		padding-top: 120px;
@@ -25,22 +25,18 @@
 			width: 320px;
 			display: flex;
 			flex-flow: column wrap;
-
-			// .box-2 {order: 1;}
 			.box-1 {
 				margin-bottom: 80px;
 				order: 1;
 			}
 		}
 	}
-
 	h3 {
 		color: #333333;
 		font: 700 20px/28px $secondary_font;
 		text-transform: uppercase;
 	}
 	p {padding: 30px 0 45px 0;}
-
 	.service-img {
 		width: 135px;
 		margin: 45px auto 0 auto;
