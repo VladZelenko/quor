@@ -1,3 +1,11 @@
+@media (min-width: 1570px) and (max-width: 2880px) {
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+}
+
+
 @media (min-width: 320px) and (max-width: 768px) {
 	.nav {display: none;
 		li a {
