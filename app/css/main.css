@@ -6273,7 +6273,7 @@ body {
   min-height: 890px; }
 
 .about .main-flexbox {
-  padding-top: 80px;
+  padding-top: 120px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6283,17 +6283,32 @@ body {
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
   text-align: center; }
   .about .main-flexbox .col-1, .about .main-flexbox .col-2, .about .main-flexbox .col-3 {
-    width: 380px; }
+    width: 320px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap; }
+    .about .main-flexbox .col-1 .box-1, .about .main-flexbox .col-2 .box-1, .about .main-flexbox .col-3 .box-1 {
+      margin-bottom: 80px;
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1; }
 
 .about h3 {
   color: #333333;
@@ -6310,7 +6325,7 @@ body {
   background: #ffcc00;
   position: relative;
   left: 0;
-  top: 0; }
+  bottom: 50px; }
   .about .service-img .overlay-box-1 {
     width: 135px;
     height: 80px;
@@ -6335,6 +6350,28 @@ body {
   height: 50px;
   display: block;
   background: url("../../img/SVG/gear.svg");
+  z-index: 10; }
+
+.box-img-2:after {
+  content: '';
+  position: relative;
+  width: 50px;
+  margin: 0 auto;
+  bottom: 60px;
+  height: 50px;
+  display: block;
+  background: url("../../img/SVG/bulb.svg");
+  z-index: 10; }
+
+.box-img-3:after {
+  content: '';
+  position: relative;
+  width: 50px;
+  margin: 0 auto;
+  bottom: 60px;
+  height: 50px;
+  display: block;
+  background: url("../../img/SVG/sand-clock.svg");
   z-index: 10; }
 
 .projects {
@@ -6446,6 +6483,22 @@ body {
     margin-top: 20px; }
     #touch-menu .fa-bars {
       font-size: 22px; } }
+
+@media (min-width: 870px) and (max-width: 1320px) {
+  .about .main-flexbox .col-1, .about .main-flexbox .col-2 {
+    margin-right: 30px; } }
+
+@media (min-width: 1330px) and (max-width: 2880px) {
+  .about .main-flexbox .col-2 {
+    position: relative;
+    top: 50px;
+    margin: 0 100px; }
+  .about .main-flexbox .col-1 .box-1, .about .main-flexbox .col-3 .box-1 {
+    margin-bottom: 45px;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0; } }
 
 @media (min-width: 400px) and (max-width: 1920px) {
   .services h2.title {
