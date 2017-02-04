@@ -6,3 +6,19 @@
 	font: 400 12px/25px $primary_font;
 	text-align: center;
 }
+.pricing-btn {
+	display: block;
+	margin: 0 auto;
+	width: 170px;
+	height: 45px;
+	background: $head_primary_color;
+	color: $secondary_font_color;
+	font: 700 16px/45px $primary_font;
+	text-align: center;
+	text-transform: uppercase;
+	&:hover {
+		background: $secondary_font_color;
+		color: $head_primary_color;
+		transition: all .5s ease-in-out;
+	}
+}

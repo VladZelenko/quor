@@ -1,10 +1,7 @@
 .projects {
 	width: 100%;
 	min-height: 800px;
-
-	.carousel {
-		padding-top: 20px;
-	}
+	.carousel {padding-top: 20px;}
 	.flexbox {
 		display: flex;
 		flex-flow: row wrap;
@@ -13,18 +10,13 @@
 			order: 1;
 			max-width: 600px;
 		}
-		.col-2 {
-			max-width: 470px;
-		}
+		.col-2 {max-width: 470px;}
 	}
-
 	h3 {
 		padding: 100px 0 35px 0;
 		color: #333333;
 		font: 700 20px/28px $secondary_font;
 		text-transform: uppercase;
 	}
-	.item-2 {
-		padding: 35px 0;
-	}
+	.item-2 {padding: 35px 0;}
 }

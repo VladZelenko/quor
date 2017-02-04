@@ -1,57 +1,74 @@
 .blog {
-	background: #ececec;
-	h2.title {
-		margin: 80px 0 65px 0;
+	&:after {
+		content: ' ';
+		display: block;
+		width: 0;
+		height: 0;
+		border-left: 50vw solid transparent;
+		border-top: 8vw solid #ececec;
+		border-right: 50vw solid transparent;
 	}
-	.flexbox {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-
-		.col-2, .col-3, .col-6, .col-7 {margin-top: 60px;}
-	}
-	.item {
-		margin: 20px;
-		padding: 0;
-		width: 270px;
-		min-height: 430px;
-		border-radius: 10px 9px 9px 10px;
-		background: $secondary_font_color;
-	}
-	h3 {
-		padding: 40px 0 25px 15px;
-		color: $head_primary_color;
-		font: 700 18px $primary_font;
-	}
-	p {
-		padding: 0 30px 20px 15px;
-		color: #696969;
-		font: 400 16px/30px $primary_font;
-	}
-	.box-2, .box-3, .box-6 {
-		position: relative;
-		top: 30px;
-	}
-	.like-comments {
-		border-top: 1px solid #d9d9d9;
-		min-height: 55px;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-
-		.like {
-			padding-left: 10px;
-			color: #444444;
-			font: 600 14px $post_font;
+	.blog-box {
+		background: #ececec;
+		width: 100%;
+		min-height: 1180px;
+		h2.title {
+			margin: 80px 0 35px 0;
 		}
-		.comments {
-			padding-left: 10px;
-			color: #595858;
-			font: 700 14px $primary_font;
+		.flexbox {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			.col-2, .col-3 {
+				margin-top: 60px;
+			}
+			.col-1, .col-3, .col-5, .col-7 {
+				height: 460px;
+			}
 		}
-		img {
+		.item {
+			margin: 20px;
+			padding: 0;
+			width: 270px;
+			min-height: 430px;
+			border-radius: 10px 9px 9px 10px;
+			background: $secondary_font_color;
+		}
+		h3 {
+			padding: 40px 0 25px 15px;
+			color: $head_primary_color;
+			font: 700 18px $primary_font;
+		}
+		p {
+			padding: 0 30px 20px 15px;
+			color: #696969;
+			font: 400 16px/30px $primary_font;
+		}
+		.box-2, .box-3, .box-6 {
 			position: relative;
-			top: 5px;
+			top: 30px;
+		}
+		.like-comments {
+			border-top: 1px solid #d9d9d9;
+			min-height: 55px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+
+			.like {
+				padding-left: 10px;
+				color: #444444;
+				font: 600 14px $post_font;
+			}
+			.comments {
+				padding-left: 10px;
+				color: #595858;
+				font: 700 14px $primary_font;
+			}
+			img {
+				position: relative;
+				top: 5px;
+			}
 		}
 	}
 }

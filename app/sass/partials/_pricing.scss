@@ -1,0 +1,74 @@
+.pricing {
+	.pricing-box {
+		width: 100%;
+		min-height: 810px;
+	}
+	.flexbox {
+		padding-top: 80px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		text-align: center;
+	}
+	.col-1, .col-3 {
+		padding: 45px 0 35px 0;
+		margin: 30px 0;
+		width: 300px;
+		height: 570px;
+		background: #ffcc00;
+		color: $head_primary_color;
+	}
+	.col-2 {
+		width: 300px;
+		height: 630px;
+		box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.23);
+		border: 1px solid #009bff;
+		background: #009bff;
+		color: $head_primary_color;
+		&:before {
+			margin: 30px auto 35px auto;
+			position: relative;
+			z-index: 10;
+			display: block;
+			content: '';
+			width: 30px;
+			height: 30px;
+			background: ('../../img/SVG/checked.svg'); //чому деякі свг не выдобразились? і чим їх правильно підключати надалі?
+			border: 1px solid #fff;
+		}
+	}
+	h3 {
+		color: $secondary_font_color;
+		font: 700 26px $primary_font;
+		text-transform: uppercase;
+	}
+
+	.price {
+		padding: 10px 0 20px 0;
+		.currency {
+			position: relative;
+			bottom: 17px;
+			right: 5px;
+			font: 400 24px $primary_font;
+		}
+		i {
+			position: relative;
+			bottom: 2px;
+			right: 5px;
+			font: 800 48px $primary_font;
+		}
+
+	}
+	.gap {
+		font: 400 14px $primary_font;
+		span {
+			padding-right: 5px;
+			font: 400 24px $primary_font;
+		}
+	}
+	.options {
+		padding: 30px 0 10px 0;
+		border-top: 1px solid #ffefb1;
+		li {font: 400 18px/72px $primary_font;}
+	}
+}
