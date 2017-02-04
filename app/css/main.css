@@ -6521,6 +6521,8 @@ body {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    .blog .flexbox .col-2, .blog .flexbox .col-3, .blog .flexbox .col-6, .blog .flexbox .col-7 {
+      margin-top: 60px; }
   .blog .item {
     margin: 20px;
     padding: 0;
