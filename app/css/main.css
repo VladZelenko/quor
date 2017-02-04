@@ -8579,6 +8579,18 @@ body {
       font: italic 44px/60px "Lato", sans-serif;
       text-align: center;
       text-transform: uppercase; }
+  .hero #top-nav-active {
+    background: #ffcc00; }
+    .hero #top-nav-active:after {
+      position: relative;
+      top: 30px;
+      display: block;
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 55px solid transparent;
+      border-top: 30px solid #ffcc00;
+      border-right: 55px solid transparent; }
 
 .nav {
   display: -webkit-box;
@@ -8593,15 +8605,9 @@ body {
 .nav li a,
 #touch-menu {
   display: block;
-  padding: 10px 20px;
-  color: #6e6e6e;
-  font: 700 14px/24px "Lato", sans-serif; }
-
-.nav li a:hover {
-  color: #ffffff; }
-
-#touch-menu:hover {
-  color: #ffffff; }
+  padding: 20px 30px;
+  color: #ffffff;
+  font: 400 18px/24px "Lato", sans-serif; }
 
 #touch-menu {
   display: none; }
@@ -9132,10 +9138,6 @@ body {
       border-top: 1px solid #eee;
       background: #ffffff;
       color: #6e6e6e; }
-      .nav li a:hover {
-        background: #f0f0f0;
-        color: #ffcc00;
-        border-left: 3px solid #ffcc00; }
   .nav li:first-child a {
     border-top: none; }
   #touch-menu {

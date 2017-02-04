@@ -31,10 +31,20 @@ $('.masonry-container').masonry({
 });
 
 
-//scrol-top
+//scrol-top треба щось зробить з цим
 $(document).ready(function(){
 	$('.scrollToTop').click(function(){
 		$('html, body').animate({scrollTop : 0},1800);
+		return false;
+	});
+});
+
+//
+$(document).ready(function() {
+	$('a[href^="#"]').click(function(){
+		var el = $(this).attr('href');
+		$('body').animate({
+			scrollTop: $(el).offset().top}, 3000);
 		return false;
 	});
 });

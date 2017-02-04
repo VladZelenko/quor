@@ -13,11 +13,11 @@
 			background: $secondary_font_color;
 			color: $primary_font_color;
 
-			&:hover {
-				background: #f0f0f0;
-				color: #ffcc00;
-				border-left: 3px solid #ffcc00;
-			}
+			// &:hover {
+			// 	background: #f0f0f0;
+			// 	color: #ffcc00;
+			// 	border-left: 3px solid #ffcc00;
+			// }
 		}
 	}
 	.nav li:first-child a {border-top: none;}

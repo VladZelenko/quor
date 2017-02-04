@@ -17,6 +17,20 @@
 			text-transform: uppercase;
 		}
 	}
+	#top-nav-active {
+		background: #ffcc00;
+		&:after {
+			position: relative;
+			top: 30px;
+			display: block;
+			content: '';
+			width: 0;
+			height: 0;
+			border-left: 55px solid transparent;
+			border-top: 30px solid #ffcc00;
+			border-right: 55px solid transparent;
+		}
+	}
 }
 
 .nav {
@@ -26,10 +40,10 @@
 .nav li a,
 #touch-menu {
 	display: block;
-	padding: 10px 20px;
-	color: $primary_font_color;
-	font: 700 14px/24px $primary_font;
+	padding: 20px 30px;
+	color: $secondary_font_color;
+	font: 400 18px/24px $primary_font;
 }
-.nav li a:hover {color: $secondary_font_color;}
-#touch-menu:hover {color: $secondary_font_color;}
+// .nav li a:hover {color: $secondary_font_color;}
+// #touch-menu:hover {color: $secondary_font_color;}
 #touch-menu {display: none;}
