@@ -29,3 +29,12 @@ $('.masonry-container').masonry({
   itemSelector: '.item',
   columnWidth: 20
 });
+
+
+//scrol-top
+$(document).ready(function(){
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},1800);
+		return false;
+	});
+});

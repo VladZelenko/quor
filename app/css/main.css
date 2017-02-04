@@ -8543,7 +8543,7 @@ body {
     background: #d1d1d1; }
 
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto; }
 
 @font-face {
@@ -8998,16 +8998,17 @@ body {
   .footer a {
     color: #9ab3cc; }
   .footer h3 {
+    padding-top: 50px;
     color: #ffffff;
     text-transform: uppercase; }
     .footer h3:after {
+      margin: 15px 0 10px 0;
       display: block;
       content: '';
       width: auto;
       height: 1px;
       background: #7eabc7; }
   .footer .flexbox {
-    padding-top: 50px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -9025,12 +9026,54 @@ body {
     max-width: 370px;
     min-width: 280px;
     width: 100%; }
+    .footer .col-1 img {
+      margin-top: 50px;
+      width: 180px;
+      height: 50px; }
+    .footer .col-1 p {
+      padding: 35px 0 30px 0;
+      font: 400 14px/26px "Lato", sans-serif; }
+    .footer .col-1 .tel {
+      padding: 30px 0 25px 0; }
+    .footer .col-1 .fa {
+      margin-right: 10px; }
   .footer .col-2 {
     width: 85px; }
+    .footer .col-2 .navigation {
+      font: 400 14px/36px "Lato", sans-serif; }
   .footer .col-3 {
     width: 150px; }
+    .footer .col-3 ul {
+      font: 400 14px/36px "Lato", sans-serif; }
   .footer .col-4 {
-    width: 270px; }
+    width: 280px; }
+    .footer .col-4 p {
+      font: 400 14px/24px "Lato", sans-serif; }
+    .footer .col-4 li {
+      display: inline-block;
+      padding-right: 20px; }
+      .footer .col-4 li .fa {
+        font-size: 15px;
+        padding-bottom: 30px; }
+  .footer .copyright {
+    margin-top: 55px;
+    border-top: 1px solid #4a627c;
+    text-align: center;
+    width: 100%;
+    height: 80px; }
+    .footer .copyright span {
+      position: relative;
+      bottom: 10px; }
+    .footer .copyright .scrollToTop {
+      position: relative;
+      bottom: 25px;
+      display: block;
+      margin: 0 auto;
+      width: 45px;
+      height: 50px;
+      background: #ffcc00; }
+    .footer .copyright img {
+      padding: 15px; }
 
 .primary-btn {
   display: block;
@@ -9055,6 +9098,27 @@ body {
     color: #000000;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out; }
+
+.email-form input {
+  max-width: 200px;
+  height: 40px;
+  background-color: #ffffff;
+  padding: 0 0 0 15px;
+  margin: 40px 0 35px 0;
+  outline: none;
+  border: none; }
+
+.email-form button {
+  position: relative;
+  right: 5px;
+  width: 50px;
+  height: 40px;
+  background: #009bff;
+  outline: none;
+  border: none; }
+  .email-form button .fa {
+    color: #ffffff;
+    font-size: 15px; }
 
 @media (min-width: 1570px) and (max-width: 2880px) {
   .container {
@@ -9085,6 +9149,10 @@ body {
             justify-content: flex-end;
     margin-top: 20px; }
     #touch-menu .fa-bars {
+      border: 2px solid red;
+      position: relative;
+      z-index: 24;
+      color: #ffffff;
       font-size: 22px; } }
 
 @media (min-width: 870px) and (max-width: 1320px) {
@@ -9160,3 +9228,26 @@ body {
   .pricing .pricing-box .flexbox {
     width: 300px;
     margin: 0 auto; } }
+
+@media (min-width: 400px) and (max-width: 770px) {
+  .footer .flexbox {
+    width: 300px;
+    margin: 0 auto; } }
+
+@media (min-width: 770px) and (max-width: 1360px) {
+  .footer .flexbox {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
+@media (min-width: 1360px) {
+  .footer .flexbox {
+    width: 1400px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .footer .col-1, .footer .col-2, .footer .col-3 {
+    margin-right: 100px; } }

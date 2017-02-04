@@ -26,7 +26,13 @@
 		justify-content: flex-end;
 		margin-top: 20px;
 
-		.fa-bars {font-size: 22px;}
+		.fa-bars {
+			border: 2px solid red;
+			position: relative;
+			z-index: 24;
+			color: #ffffff;
+			font-size: 22px;
+		}
 	}
 }
 //--------------------------------------------------------------------------//
@@ -140,4 +146,31 @@
 		}
 	}
 }
+//----------------------------------------------------------------------------------
+//----------------------------FOOTER-------------------------------------------
+@media (min-width: 400px) and (max-width: 770px) {
+	.footer {
+			.flexbox {
+				width: 300px;
+				margin: 0 auto;
+			}
+		}
+	}
+	@media (min-width: 770px) and (max-width: 1360px) {
+	.footer {
+			.flexbox {justify-content: space-between;}
+		}
+	}
+	@media (min-width: 1360px)  {
+	.footer {
+			.flexbox {
+				width: 1400px;
+				margin: 0 auto;
+				justify-content: center;
+			}
+			.col-1, .col-2, .col-3 {
+				margin-right: 100px;
+			}
+		}
+	}
 //----------------------------------------------------------------------------------
