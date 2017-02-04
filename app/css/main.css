@@ -6212,7 +6212,7 @@ body {
     background: #d1d1d1; }
 
 .container {
-  width: 90%;
+  width: 95%;
   margin: 0 auto; }
 
 .hero {
@@ -6507,6 +6507,20 @@ body {
   background: #ececec; }
   .blog h2.title {
     margin: 80px 0 65px 0; }
+  .blog .flexbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .blog .item {
     margin: 20px;
     padding: 0;
@@ -6523,6 +6537,9 @@ body {
     padding: 0 30px 20px 15px;
     color: #696969;
     font: 400 16px/30px "Lato", sans-serif; }
+  .blog .box-2, .blog .box-3, .blog .box-6 {
+    position: relative;
+    top: 30px; }
   .blog .like-comments {
     border-top: 1px solid #d9d9d9;
     min-height: 55px;

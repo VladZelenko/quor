@@ -23,7 +23,7 @@ $('.carousel').slick({
 	arrows: false
 });
 
-MASONRY
+//MASONRY
 $('.masonry-container').masonry({
   // options
   itemSelector: '.item',
