@@ -1,5 +1,46 @@
 .blog {
+	background: #ececec;
 	h2.title {
-		padding-top: 200px;
+		margin: 80px 0 65px 0;
+	}
+	.item {
+		margin: 20px;
+		padding: 0;
+		width: 270px;
+		min-height: 430px;
+		border-radius: 10px 9px 9px 10px;
+		background: $secondary_font_color;
+	}
+	h3 {
+		padding: 40px 0 25px 15px;
+		color: $head_primary_color;
+		font: 700 18px $primary_font;
+	}
+	p {
+		padding: 0 30px 20px 15px;
+		color: #696969;
+		font: 400 16px/30px $primary_font;
+	}
+	.like-comments {
+		border-top: 1px solid #d9d9d9;
+		min-height: 55px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		.like {
+			padding-left: 10px;
+			color: #444444;
+			font: 600 14px $post_font;
+		}
+		.comments {
+			padding-left: 10px;
+			color: #595858;
+			font: 700 14px $primary_font;
+		}
+		img {
+			position: relative;
+			top: 5px;
+		}
 	}
 }

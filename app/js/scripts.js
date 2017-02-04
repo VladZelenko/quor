@@ -22,3 +22,10 @@ $('.carousel').slick({
 	dots: true,
 	arrows: false
 });
+
+MASONRY
+$('.masonry-container').masonry({
+  // options
+  itemSelector: '.item',
+  columnWidth: 20
+});
