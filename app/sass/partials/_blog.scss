@@ -9,12 +9,10 @@
 		border-right: 50vw solid transparent;
 	}
 	.blog-box {
+		padding: 80px 0;
 		background: #ececec;
 		width: 100%;
 		min-height: 1180px;
-		h2.title {
-			margin: 80px 0 35px 0;
-		}
 		.flexbox {
 			display: flex;
 			flex-flow: row wrap;

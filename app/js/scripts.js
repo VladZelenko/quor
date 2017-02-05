@@ -31,7 +31,7 @@ $('.masonry-container').masonry({
 });
 
 
-//scrol-top треба щось зробить з цим
+//scrol-top
 $(document).ready(function(){
 	$('.scrollToTop').click(function(){
 		$('html, body').animate({scrollTop : 0},1800);
@@ -39,12 +39,12 @@ $(document).ready(function(){
 	});
 });
 
-//
+//navigations
 $(document).ready(function() {
 	$('a[href^="#"]').click(function(){
 		var el = $(this).attr('href');
 		$('body').animate({
-			scrollTop: $(el).offset().top}, 3000);
+			scrollTop: $(el).offset().top}, 2000);
 		return false;
 	});
 });

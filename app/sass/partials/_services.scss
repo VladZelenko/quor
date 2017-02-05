@@ -1,40 +1,43 @@
 .services {
-	background: url('../../img/services.png') no-repeat center center;
-	background-size: cever;
-	width: 100%;
-	min-height: 775px;
+	background: linear-gradient(to bottom, #ffffff 50%, #ececec 50%);
+	.service-box {
+		background: url('../../img/services.png') no-repeat center center;
+		background-size: cever;
+		width: 100%;
+		min-height: 775px;
+		padding: 160px 0 80px 0;
 
-	h2.title {
-		padding-top: 150px;
-		color: $secondary_font_color;
-		font: 600 30px $primary_font;
+		h2.title {
+			color: $secondary_font_color;
+			font: 600 30px $primary_font;
+		}
+		.flexbox {
+			padding-top: 40px;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			.col-1, .col-2, .col-3, .col-4 {padding: 15px;}
+		}
 	}
-	.flexbox {
-		padding-top: 40px;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		.col-1, .col-2, .col-3, .col-4 {padding: 15px;}
-	}
-}
-.service-img {
-	width: 105px;
-	margin: 45px auto 0 auto;
-	height: 60px;
-	background: #ffcc00;
-	position: relative;
-	left: 0;
-	bottom: 50px;
-
-	.overlay-box-1 {
+	.service-img {
 		width: 105px;
+		margin: 45px auto 0 auto;
 		height: 60px;
 		background: #ffcc00;
-		transform: rotate(-60deg);
+		position: relative;
+		left: 0;
+		bottom: 50px;
 
-		.overlay-box-2 {
-			@extend .overlay-box-1;
-			transform: rotate(120deg);
+		.overlay-box-1 {
+			width: 105px;
+			height: 60px;
+			background: #ffcc00;
+			transform: rotate(-60deg);
+
+			.overlay-box-2 {
+				@extend .overlay-box-1;
+				transform: rotate(120deg);
+			}
 		}
 	}
 }
